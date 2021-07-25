@@ -45,7 +45,7 @@
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
     "clean-up": "rimraf ./dist",
-    "prepublish": "npm run lint && npm run test:watch && npm run build"
+    "prepublishOnly": "npm run lint && npm run test:watch && npm run build"
   },
   "husky": {
     "hooks": {
